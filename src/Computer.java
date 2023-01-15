@@ -29,42 +29,42 @@ public class Computer {
 
 class RAM {
     private String name;
-    private double value;
+    private double volume;
 
     public RAM() {
         this.name = "Kingston Fury Beast DDR4";
-        this.value = 4;
+        this.volume = 4;
     }
 
-    public RAM(String name, double value) {
+    public RAM(String name, double volume) {
         this.name = name;
-        this.value = value;
+        this.volume = volume;
     }
 
     public String toString() {
-        return "RAM name: " + name + "\nRAM value: " + value;
+        return "RAM name: " + name + "\nRAM volume: " + volume;
     }
 }
 
 class HDD {
     private String name;
-    private double value;
+    private double volume;
     private String type;
 
-    public HDD(String name, double value, String type) {
+    public HDD(String name, double volume, String type) {
         this.name = name;
-        this.value = value;
+        this.volume = volume;
         this.type = type;
     }
 
     public HDD() {
         this.name = "Toshiba DT01ACA";
-        this.value = 500;
+        this.volume = 500;
         this.type = "internal"; // internal || external
     }
 
     public String toString() {
-        return "HDD name: " + name + "\nHDD value: " + value + "\nHDD type: " + type;
+        return "HDD name: " + name + "\nHDD volume: " + volume + "\nHDD type: " + type;
     }
 }
 
